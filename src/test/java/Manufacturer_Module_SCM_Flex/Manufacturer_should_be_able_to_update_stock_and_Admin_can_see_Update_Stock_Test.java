@@ -1,4 +1,4 @@
-package Automate_Project_TestCases;
+package Manufacturer_Module_SCM_Flex;
 
 import java.io.IOException;
 

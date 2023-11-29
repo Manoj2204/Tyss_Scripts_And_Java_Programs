@@ -1,4 +1,4 @@
-package Automate_Project_TestCases;
+package Admin_Module_SCM_Flex;
 
 import static org.testng.Assert.fail;
 
