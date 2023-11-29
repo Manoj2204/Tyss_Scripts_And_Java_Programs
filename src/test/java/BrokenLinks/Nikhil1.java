@@ -33,7 +33,8 @@ public class Nikhil1
 		String ClearTripwindowid = list.get(2);
 		String Kayakwindowid = list.get(3);
 		String Facebookwindowid = list.get(4);
-		Thread.sleep(2000);
+		driver.close();
+		//Thread.sleep(2000);
 		driver.switchTo().window(ClearTripwindowid);
 //		for (String w : allWindowId) 
 //		{
