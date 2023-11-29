@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test  name="chrome">
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="PracticeTestNG.Practice_Test"/>
+      <class name="PracticeTestNG.Demo_Test"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Edge">
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+       <class name="PracticeTestNG.Sample_Test"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->

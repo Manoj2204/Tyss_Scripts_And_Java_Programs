@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite" preserve-order="true">
+  <test thread-count="1" parallel="tests" name="Test" >
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="Automate_Project_TestCases.Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_to_see_Edit_product_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

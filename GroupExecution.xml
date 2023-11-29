@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<test thread-count="1" parallel="tests" name="Test" preserve-order="false">
+		<classes>
+			<class name="PracticeTestNG.Demo_Test">
+				<methods>
+					<exclude name="practice1"></exclude>
+				</methods>
+			</class>
+			<class name="PracticeTestNG.Sample_Test" />
+			<class name="PracticeTestNG.Practice_Test"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
