@@ -56,7 +56,7 @@ public void test() throws IOException
 	mHomepage.ClickOnaddProductLink();
 	
 	String actualaddproducttitle = driver.getTitle();
-	String expectedproductpagetitle= "Add Produc";
+	String expectedproductpagetitle= "Add Product";
 	Assert.assertEquals(actualaddproducttitle, expectedproductpagetitle);
 	System.out.println("addProduct page is displayed... and its verified with title");
 	
@@ -74,7 +74,7 @@ public void test() throws IOException
 	webdriverutils.MinimizeWindow(driver);
 	
 	// close the browser
-	driver.quit();
+	
 	
 	
    }

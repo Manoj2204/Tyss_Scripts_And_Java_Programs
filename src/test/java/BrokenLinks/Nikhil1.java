@@ -35,13 +35,17 @@ public class Nikhil1
 		String Facebookwindowid = list.get(4);
 		driver.close();
 		//Thread.sleep(2000);
-		driver.switchTo().window(ClearTripwindowid);
-//		for (String w : allWindowId) 
-//		{
-//			driver.switchTo().window(w);
-//			Thread.sleep(2000);
-//			
-//		}
+		//driver.switchTo().window(ClearTripwindowid);
+		for (String w : allWindowId) 
+		{
+			String url = driver.switchTo().window(w).getCurrentUrl();
+			if(url.equals("https://www.facebook.com"))
+			{
+				break;
+			}
+			Thread.sleep(2000);
+			
+		}
 		
 	}
 	

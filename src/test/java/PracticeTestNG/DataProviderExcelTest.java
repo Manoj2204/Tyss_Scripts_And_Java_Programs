@@ -21,7 +21,7 @@ public class DataProviderExcelTest
 		FileInputStream fis = new FileInputStream(IPathConstants.ExcelPath);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet("Sheet2");
-		int rowCount = sh.getPhysicalNumberOfRows();
+		int rowCount = sh.getLastRowNum();
 		int colCount = sh.getRow(0).getLastCellNum();
 		
 		Object[][]obj=new Object[rowCount][colCount];

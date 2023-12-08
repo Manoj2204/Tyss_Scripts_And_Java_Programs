@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Admin_Module_SCM_Flex.DeletingRetailer_Test">
+      <class name="Number_Series_Programs.Print_PrimeNumber_In_Array">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- Admin_Module_SCM_Flex.DeletingRetailer_Test -->
+      </class> <!-- Number_Series_Programs.Print_PrimeNumber_In_Array -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

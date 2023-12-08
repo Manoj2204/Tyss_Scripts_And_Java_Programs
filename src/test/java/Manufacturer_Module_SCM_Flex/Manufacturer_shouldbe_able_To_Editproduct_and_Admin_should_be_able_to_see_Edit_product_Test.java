@@ -24,7 +24,7 @@ public class Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_
 {
 	
 	@Test
-	public void test() throws IOException
+	public void test() throws IOException, InterruptedException
 
 	{
 		FileUtils fileutils = new FileUtils();
@@ -36,8 +36,8 @@ public class Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_
 		String USERNAME = fileutils.readDataFromPropertyFile("manufacturerusername");
 		String PASSWORD = fileutils.readDataFromPropertyFile("manufacturerpassword");
 		String ManufacturerLOGINTYPE = fileutils.readDataFromPropertyFile("Manufacturerlogintype");
-		String AdminUsername = fileutils.readDataFromPropertyFile("adminusername");
-		String Adminpassword = fileutils.readDataFromPropertyFile("adminpassword");
+		String AdminUsername1 = fileutils.readDataFromPropertyFile("adminusername");
+		String Adminpassword1 = fileutils.readDataFromPropertyFile("adminpassword");
 		String AdminLOGINTYPE = fileutils.readDataFromPropertyFile("Adminlogintpe");
 
 		//WebDriver driver = new ChromeDriver();
@@ -99,15 +99,16 @@ public class Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_
 
 		// Click on logout button
 		mHomepage.ClickOnLogoutButton();
+		Thread.sleep(2000);
 
 		// Verify login page should be displayed
 		String actualloginpageTitle = driver.getTitle();
-		String ExpectedLoginpageTitle = "";
+		String ExpectedLoginpageTitle = "Login";
 		Assert.assertEquals(actualloginpageTitle, ExpectedLoginpageTitle);
 		System.out.println("Login page is displayed and its verified with title");
 
 		// enter username, password, loginType and click on login button
-		loginpage.EnterUsernameAndPassword(AdminUsername, Adminpassword);
+		loginpage.EnterUsernameAndPassword(AdminUsername1, Adminpassword1);
 		loginpage.getLogintypeDropdown().sendKeys(AdminLOGINTYPE);
 		loginpage.ClickOnLoginButton();
 		
@@ -127,7 +128,7 @@ public class Manufacturer_shouldbe_able_To_Editproduct_and_Admin_should_be_able_
 		String productPrice = productlistpage.getProductprice().getText();
 
 		System.out.println("Updated Product Name : " + productname + "  " + "Updated Product price : " + productPrice);
-		driver.close();
+		//driver.close();
 
 	}
 

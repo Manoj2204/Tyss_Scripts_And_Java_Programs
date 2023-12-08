@@ -35,11 +35,11 @@ public class BaseClass
 		System.out.println("--Database connected--");
 	}
 	
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass
-	public void Config_BeforeClass(String BROWSER) throws IOException
+	public void Config_BeforeClass() throws IOException
 	{
-		//String BROWSER = flib.readDataFromPropertyFile("browser");
+		String BROWSER = flib.readDataFromPropertyFile("browser");
 		if (BROWSER.equalsIgnoreCase("chrome")) 
 		{
 			driver = new ChromeDriver();

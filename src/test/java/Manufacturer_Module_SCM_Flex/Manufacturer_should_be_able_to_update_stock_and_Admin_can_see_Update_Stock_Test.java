@@ -39,8 +39,8 @@ public class Manufacturer_should_be_able_to_update_stock_and_Admin_can_see_Updat
 		String USERNAME =fileutils.readDataFromPropertyFile("manufacturerusername");
 		String PASSWORD =fileutils.readDataFromPropertyFile("manufacturerpassword");
 		String ManufacturerLOGINTYPE =fileutils.readDataFromPropertyFile("Manufacturerlogintype");
-		String AdminUsername =fileutils.readDataFromPropertyFile("adminusername");
-		String Adminpassword =fileutils.readDataFromPropertyFile("adminpassword");
+		String AdminUsername1 =fileutils.readDataFromPropertyFile("adminusername");
+		String Adminpassword1 =fileutils.readDataFromPropertyFile("adminpassword");
 		String AdminLOGINTYPE =fileutils.readDataFromPropertyFile("Adminlogintpe");
 	
 		//WebDriver driver = new ChromeDriver();
@@ -118,8 +118,11 @@ public class Manufacturer_should_be_able_to_update_stock_and_Admin_can_see_Updat
 		System.out.println("Login page is displayed and its verified with title");
 		
 		// Login as Admin And check product is displayed or not
-		loginpage.EnterUsernameAndPassword(AdminUsername, Adminpassword);
-		loginpage.getLogintypeDropdown().sendKeys(AdminLOGINTYPE);
+		loginpage.getUsername().sendKeys("admin");
+		loginpage.getPassword().sendKeys("admin123");
+		
+		//loginpage.EnterUsernameAndPassword(AdminUsername1, Adminpassword1);
+		loginpage.EnterLoginType(AdminLOGINTYPE);
 		loginpage.ClickOnLoginButton();
 
 		// Verify the page title
