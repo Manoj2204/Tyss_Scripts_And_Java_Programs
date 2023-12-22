@@ -20,14 +20,14 @@ public class Find_Frequently_Repeated_Number_Of_Array
 					count++;
 				}
 			}
-			if(count>max)
+			if(count>=max)
 			{
 				max=count;
 				val=a[i];
 			}
-			System.out.print(val+" "+"Repeating is"+" "+max+" "+"times");
+			//System.out.println(val+" "+"Repeating is"+" "+max+" "+"times");
 		}
-		//System.out.print(val+" "+"Repeating is"+" "+max+" "+"times");
+		System.out.print(val+" "+"Repeating is"+" "+max+" "+"times");
 	}
 		
 

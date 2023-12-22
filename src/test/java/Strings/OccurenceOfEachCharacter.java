@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class OccurenceOfEachCharacter 
 {
 	@Test
-	public void test()
+	public void test() throws InterruptedException
 	{
 		String s1="Tester";
 		String s = s1.toLowerCase();
@@ -27,6 +27,7 @@ public class OccurenceOfEachCharacter
 					}
 				}
 			}
+			Thread.sleep(4000);
 			if(count>=1)
 			{
 				System.out.println(ch[i]+" = "+count);

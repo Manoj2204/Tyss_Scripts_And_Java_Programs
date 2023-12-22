@@ -28,7 +28,7 @@ public class Asign_Remove_Duplicate_Characters_From_Arrays_By_LinkedHashMap
 		{
 			if(m.getValue()==1)
 			{
-				System.out.println(m.getKey()+" "+m.getValue());
+				System.out.print(m.getKey()+" "+m.getValue());
 			}
 		}
 

@@ -21,8 +21,9 @@ public class Ascending_And_Descending_OrderBubbleSort
 					a[j]=temp;
 				}
 			}
-			System.out.println("After Swapping"+ "  "+a[i]);
+			System.out.print(a[i]+" ");
 		}
+		
 		
 	}
 	
@@ -42,7 +43,7 @@ public class Ascending_And_Descending_OrderBubbleSort
 					a[j]=temp;
 				}
 			}
-			System.out.println("After Swapping"+ "  "+a[i]);
+			System.out.print(a[i]+" ");
 		}
 	}
 

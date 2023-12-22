@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 
 import org.testng.annotations.Test;
 
-public class Assign_Print_Only_Duplicate_Elements_By_Using_LinkedHashSet 
+public class Assign_Print_Only_Duplicate_Elements_By_Using_LinkedHashMap 
 {
 	@Test
 	public void DuplicateElements()

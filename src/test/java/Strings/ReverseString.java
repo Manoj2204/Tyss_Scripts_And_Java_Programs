@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class ReverseString 
 {
 	@Test
-	public void reverse_1()
+	public void reverse_1() throws Throwable
 	{
 		String s= "Manoj";
 		String s2="";
@@ -75,6 +75,25 @@ public class ReverseString
 		{
 			System.out.println(ch[i]);
 		}
+	}
+	@Test
+	public void reverseString_WithoutUsingForloop_7()
+	{
+		String s="manoj";
+		String s1="";
+		StringBuilder sb= new StringBuilder(s);
+		sb.reverse();
+		s1=sb.toString();
+		System.out.println(s1);
+	}
+	
+	@Test
+	public void ReverseString_WithoutUsingForLoop_8()
+	{
+		String s="manoj";
+		StringBuffer sb= new StringBuffer(s);
+		sb.reverse();
+		System.out.println(sb.toString());
 	}
 
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Number_Series_Programs.Print_PrimeNumber_In_Array">
+      <class name="Practice_Demo.DataProvider_Facebook_Sign_Test">
         <methods>
-          <include name="test"/>
+          <include name="test" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- Number_Series_Programs.Print_PrimeNumber_In_Array -->
+      </class> <!-- Practice_Demo.DataProvider_Facebook_Sign_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

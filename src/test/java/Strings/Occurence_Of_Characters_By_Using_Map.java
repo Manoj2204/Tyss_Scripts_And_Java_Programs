@@ -25,7 +25,7 @@ public class Occurence_Of_Characters_By_Using_Map
 	    		map.put(s.charAt(i),1);
 	    	}
 	    }
-	    System.out.println(map);
+	    //System.out.println(map);
 	    for( Entry<Character, Integer> m:map.entrySet())
 	    {
 	    	if(m.getValue()>=1)
