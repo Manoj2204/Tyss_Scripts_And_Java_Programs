@@ -22,7 +22,7 @@ public class Olympics {
 		String bronze = driver.findElement(By.xpath("//span[.='" + country+ "']/ancestor::div[contains(@data-row-id,'country-medal-row')]/following-sibling::div[contains(@data-medal-id,'bronze-medals-row')][1]//span[contains(@class,'OcsTextstyles__')]")).getText();		
 		String Total = driver.findElement(By.xpath("//span[.='" + country+ "']/ancestor::div[contains(@data-row-id,'country-medal-row')]/following-sibling::div[@data-medal-id='total-medals-row-2']")).getText();
 		System.out.println(country + "=== " + gold + " Gold / " + silver + " Silver / " + bronze + " Bronze " + "Total = " +Total );
-		s.close();
+		driver.quit();
 
 	}
 

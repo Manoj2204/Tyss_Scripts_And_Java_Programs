@@ -6,13 +6,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class Prokabaddi {
+public class Prokabaddi extends BaseClassForSeleniumGrid
+{
 
-	public static void main(String[] args) 
+	@Test
+	public void test10() 
 	{
-		WebDriver driver= new ChromeDriver();
-		driver.manage().window().maximize();
+		/*WebDriver driver= new ChromeDriver();
+		driver.manage().window().maximize();*/
 		driver.get("https://www.prokabaddi.com/standings");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String CustomizedTeamName="Dabang Delhi K.C.";

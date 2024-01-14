@@ -17,8 +17,14 @@ public class Print_Vowel_Without_Duplicate
 			if(s[i]=='a'|| s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u')
 			{
 				count++;
-				System.out.println(s[i]);
+				//System.out.print(s[i]);
+				if(count==1)
+				{
+					System.out.println(s[i]);
+				}
 			}
+			
+			
 		}
 	}
 	

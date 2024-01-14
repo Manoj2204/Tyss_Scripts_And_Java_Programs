@@ -25,7 +25,7 @@ public class Manufacturer_should_be_able_to_add_products_Test extends BaseClass
 	//WebDriver driver;
 	//@Parameters("BROWSER")
 	@Test
-public void test() throws IOException
+public void test() throws IOException, InterruptedException
 {
 	// Create objects for Generic Utility			
 	FileUtils fileutils = new FileUtils();		
@@ -36,7 +36,8 @@ public void test() throws IOException
 	String MUSERNAME=fileutils.readDataFromPropertyFile("manufacturerusername");
 	String MPASSWORD=fileutils.readDataFromPropertyFile("manufacturerpassword");
 	String MLOGINTYPE=fileutils.readDataFromPropertyFile("Manufacturerlogintype");
-		
+	
+	
 	LoginPage loginpage= new LoginPage(driver);
 	ManufacturerHomePage mHomepage = new ManufacturerHomePage(driver);
 	ManufacturerAddproductPage mAddproductPage= new ManufacturerAddproductPage(driver);

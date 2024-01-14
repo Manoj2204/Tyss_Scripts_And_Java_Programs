@@ -7,9 +7,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class Amazon_Product_Price_LessThan_60000 {
-	public static void main(String[] args) {
+public class Amazon_Product_Price_LessThan_70000 {
+	@Test
+	public void test1() 
+	{
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -31,6 +34,7 @@ public class Amazon_Product_Price_LessThan_60000 {
 				System.out.println(product + "------>" + eachPrice);
 			}
 		}
+		driver.quit();
 
 	}
 

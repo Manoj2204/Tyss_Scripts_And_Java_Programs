@@ -24,7 +24,7 @@ public class Adding_Two_Arrays
 			{
 				if (a.length<b.length) 
 				{
-					System.out.print(b[i]);
+					System.out.print(b[i]+" ");
 				} else 
 				{
 					System.out.print(a[i]);

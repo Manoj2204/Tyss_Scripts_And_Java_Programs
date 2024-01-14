@@ -78,7 +78,7 @@ public class ListnerImplementation implements ITestListener
 	{
 		ExtentSparkReporter htmlreport= new ExtentSparkReporter("./ExtentReport/report.html");
 		htmlreport.config().setDocumentTitle("Scm");
-		htmlreport.config().setTheme(Theme.STANDARD);
+		htmlreport.config().setTheme(Theme.DARK);
 		htmlreport.config().setReportName("Scm_Flex");
 		
 		report= new ExtentReports();

@@ -34,7 +34,7 @@ public class Imp_Program
 //      o/p ----- s syte voLI
 	    String s1 = s.replaceAll(" ", "");   // Ilovetyss
 	    int count=s1.length()-1;
-	    for(int i=0;i<s.length();i++)
+	    for(int i=0;i<s.length()-1;i++)
 	    {
 	    	if(s.charAt(i)!=' ')
 	    	{
@@ -52,16 +52,13 @@ public class Imp_Program
 	{
 		String s="Tekion234inter52view54";
 		// o/p --- 54,52,234
-		 String[] s1 = s.split("[A-Za-z]");
+		 String[] st = s.split("[A-Z a-z]");
 		 
-		 for (int i = s1.length-1; i <=0; i++) {
-			if (!s1[i].isEmpty()) {
-				System.out.println(s1[i]+",");
-		
+		 for(int i=st.length-1;i>=0;i--)
+			{
+				System.out.print(st[i]+" ");
 			}
-		}
-		
-		
+		 
 		
 	}
 	@Test
@@ -69,10 +66,14 @@ public class Imp_Program
 		String s="Tekion234int#$%^&*(er52view54";
 		String s1 = "";
 		String res = "";
-		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i)>='0'&&s.charAt(i)<='9') {
+		for (int i = 0; i < s.length(); i++) 
+		{
+			if (s.charAt(i)>='0'&& s.charAt(i)<='9') 
+			{
 				s1=s1+s.charAt(i);
-			} else if(!s1.isEmpty()){
+			} 
+			else if(!s1.isEmpty())
+			{
 				res=","+s1+res;
 				s1="";
 			}

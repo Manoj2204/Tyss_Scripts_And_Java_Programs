@@ -45,7 +45,7 @@ public class To_check_add_retailers_page_is_displayed_Test extends BaseClass {
 		
 		// To check Whether Add retailer page should displayed..
 		String addproductactualtitle = driver.getTitle();
-		String addproductexpectedtitle="Add Retailer1";
+		String addproductexpectedtitle="Add Retailer";
 		Assert.assertEquals(addproductactualtitle, addproductexpectedtitle);
 		
 		System.out.println("AddRetailer is displayed... and its verified with title");

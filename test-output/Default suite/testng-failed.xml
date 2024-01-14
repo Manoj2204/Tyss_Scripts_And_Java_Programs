@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice_Demo.DataProvider_Facebook_Sign_Test">
+      <class name="Assignment_01.AmazonPrakshSirTest">
         <methods>
-          <include name="test" invocation-numbers="0 1 2 3"/>
+          <include name="test"/>
+          <include name="configBeforeMethod"/>
         </methods>
-      </class> <!-- Practice_Demo.DataProvider_Facebook_Sign_Test -->
+      </class> <!-- Assignment_01.AmazonPrakshSirTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

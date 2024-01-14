@@ -37,7 +37,7 @@ public class BaseClass
 	
 	//@Parameters("BROWSER")
 	@BeforeClass
-	public void Config_BeforeClass() throws IOException
+	public void Config_BeforeClass() throws IOException, InterruptedException
 	{
 		String BROWSER = flib.readDataFromPropertyFile("browser");
 		if (BROWSER.equalsIgnoreCase("chrome")) 
@@ -54,7 +54,7 @@ public class BaseClass
 		}
 		sdriver= driver;
 		wd.MaximizeWindow(driver);
-		
+		Thread.sleep(10000);
 		
 	}
 	

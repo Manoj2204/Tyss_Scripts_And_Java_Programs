@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -19,11 +20,15 @@ public class Nikhil1
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.amazon.in/");
-		JavascriptExecutor jse=(JavascriptExecutor)driver;
+		driver.switchTo().newWindow(WindowType.TAB);
+	//	Thread.sleep(2000);
+		driver.get("https://www.myntra.com/");
+		
+		/*JavascriptExecutor jse=(JavascriptExecutor)driver;
 		jse.executeScript("window.open('https://www.myntra.com/')");
 		jse.executeScript("window.open('https://www.cleartrip.com/')");
 		jse.executeScript("window.open('https://www.kayak.co.in/')");
-		jse.executeScript("window.open('https://www.facebook.com/signup')");
+		jse.executeScript("window.open('https://www.facebook.com/signup')");*/
 		
 		
 		Set<String> allWindowId = driver.getWindowHandles();
@@ -33,10 +38,11 @@ public class Nikhil1
 		String ClearTripwindowid = list.get(2);
 		String Kayakwindowid = list.get(3);
 		String Facebookwindowid = list.get(4);
+		driver.switchTo().window(Facebookwindowid);
 		driver.close();
 		//Thread.sleep(2000);
 		//driver.switchTo().window(ClearTripwindowid);
-		for (String w : allWindowId) 
+		/*for (String w : allWindowId) 
 		{
 			String url = driver.switchTo().window(w).getCurrentUrl();
 			if(url.equals("https://www.facebook.com"))
@@ -45,7 +51,7 @@ public class Nikhil1
 			}
 			Thread.sleep(2000);
 			
-		}
+		}*/
 		
 	}
 	

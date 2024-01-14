@@ -1,7 +1,7 @@
 package Arrays;
 
-import java.util.LinkedHashMap;
-import java.util.Map.Entry;
+import java.util.*;
+import java.util.Map.*;
 
 import org.testng.annotations.Test;
 

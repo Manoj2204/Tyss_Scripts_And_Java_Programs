@@ -56,7 +56,8 @@ public class Spicejet
 			}
 			catch (NoSuchElementException e) 
 			{
-				driver.findElement(By.xpath("((//div[@data-testid='undefined-calendar-picker']//*[local-name()='svg' and @preserveAspectRatio='none'])[1]")).click();
+				driver.findElement(By.xpath("//div[contains(@class,'css-1dbjc4n r-1loqt21 r-19bllq0 r-u8s1d')]")).click();
+				//driver.findElement(By.xpath("((//div[@data-testid='undefined-calendar-picker']//*[local-name()='svg' and @preserveAspectRatio='none'])[1]")).click();
 			}
 		}
 		
@@ -99,7 +100,7 @@ public class Spicejet
 		Thread.sleep(2000);
 		searchFlight.click();
 		Thread.sleep(3000);
-		//driver.quit();
+		driver.quit();
 	}
 
 }

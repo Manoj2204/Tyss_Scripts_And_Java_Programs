@@ -46,6 +46,7 @@ public class DatabaseValidate
 				if(result1>=1)
 				{
 					System.out.println("Data insert sucessfully....");
+					
 				}
 			
 		}
