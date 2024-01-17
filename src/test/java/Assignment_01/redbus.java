@@ -14,7 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class test 
+public class redbus 
 {
 	@Test
 	public void test4() throws InterruptedException
@@ -45,7 +45,7 @@ public class test
 		//
 		date.click();
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,200);");
+		//jse.executeScript("window.scrollBy(0,500);");
 		
 		for(; ;)
 		{
@@ -62,8 +62,55 @@ public class test
 		
 		driver.findElement(By.xpath("//button[text()='SEARCH BUSES']")).click();
 		Thread.sleep(2000);
-		jse.executeScript("window.scrollBy(0,300);");
-		driver.findElement(By.xpath("//div[text()='Got It']")).click();
+		
+		for(;;)
+		{
+			
+		
+		WebElement allBuses = driver.findElement(By.xpath("//span[@class='f-bold busFound']"));
+		String buses = allBuses.getText().replaceAll("[^0-9]", "");
+		int busCount = Integer.parseInt(buses);
+		
+		List<WebElement> AllBuses = driver.findElements(By.xpath("//div[@class='travels lh-24 f-bold d-color']"));
+		//System.out.println(busCount);
+		/*WebElement  BusSIze=driver.findElement(By.xpath("//span[@class='f-bold busFound' and (translate(text(),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'))>=72]"));
+		System.out.println(BusSIze.getText());*/
+		 
+        if(busCount==AllBuses.size())
+        {
+        	for(WebElement BusesName:AllBuses)
+        	{
+        		 String bus = BusesName.getText();
+        		 System.out.println(bus);
+        		 //System.out.println(BusesName.getSize());
+        		
+        	}
+        	  break;
+        }
+        else
+        {
+        	JavascriptExecutor jse2 =(JavascriptExecutor)driver;
+            jse2.executeScript("window.scrollBy(0,200)");
+
+        }
+		}
+        
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//jse.executeScript("window.scrollBy(0,300);");
+		/*driver.findElement(By.xpath("//div[text()='Got It']")).click();
 		Thread.sleep(5000);
 		int count=0;
 		
@@ -77,7 +124,7 @@ public class test
 		List<WebElement> AllBuses = driver.findElements(By.xpath("//div[@class='travels lh-24 f-bold d-color']"));
 		int Sizecount = AllBuses.size();
 		count=count+Sizecount;
-		System.out.println(count);
+		System.out.println(count);*/
 		
 		
 		/*for(; ;)

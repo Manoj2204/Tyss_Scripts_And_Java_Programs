@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-13T16:52:35 IST" name="Default suite" finished-at="2024-01-13T16:52:58 IST" duration-ms="23079">
+  <suite started-at="2024-01-17T09:55:20 IST" name="Default suite" finished-at="2024-01-17T09:55:47 IST" duration-ms="27508">
     <groups>
     </groups>
-    <test started-at="2024-01-13T16:52:35 IST" name="Default test" finished-at="2024-01-13T16:52:58 IST" duration-ms="23079">
-      <class name="Assignment_01.AmazonPrakshSirTest">
-        <test-method signature="test()[pri:0, instance:Assignment_01.AmazonPrakshSirTest@7f3b84b8]" started-at="2024-01-13T16:52:35 IST" name="test" finished-at="2024-01-13T16:52:58 IST" duration-ms="22986" status="PASS">
+    <test started-at="2024-01-17T09:55:20 IST" name="Default test" finished-at="2024-01-17T09:55:47 IST" duration-ms="27508">
+      <class name="Assignment_01.arpanGobibo">
+        <test-method signature="main2()[pri:0, instance:Assignment_01.arpanGobibo@1623b78d]" started-at="2024-01-17T09:55:20 IST" name="main2" finished-at="2024-01-17T09:55:47 IST" duration-ms="27438" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- Assignment_01.AmazonPrakshSirTest -->
+        </test-method> <!-- main2 -->
+      </class> <!-- Assignment_01.arpanGobibo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

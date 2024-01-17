@@ -27,10 +27,10 @@ public class OccurenceOfEachCharacter
 					}
 				}
 			}
-			Thread.sleep(4000);
-			if(count>=1)
+			
+			if(count==1)
 			{
-				System.out.println(ch[i]+" = "+count);
+				System.out.println(ch[i]);
 				
 			}
 		}

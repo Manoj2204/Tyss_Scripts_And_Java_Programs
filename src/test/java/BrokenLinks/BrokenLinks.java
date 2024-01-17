@@ -46,7 +46,7 @@ public class BrokenLinks
 			}
 			catch (MalformedURLException e) 
 			{
-				System.out.println(eachLink+"-----"+statusCode);
+				//System.out.println(eachLink+"-----"+statusCode);
 			}
 			
 		}

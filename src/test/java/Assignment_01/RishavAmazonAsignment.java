@@ -30,17 +30,18 @@ public class RishavAmazonAsignment
 		Thread.sleep(2000);
 		JavascriptExecutor jse =(JavascriptExecutor)driver;
 		
-		WebElement iphoneN = driver.findElement(By.xpath("//a[@aria-label='Midnight']/ancestor::div[@class='a-section a-spacing-small a-spacing-top-small']/descendant::span[text()='iPhone 14 (128 GB) - Midnight']"));
-
+		WebElement iphoneN = driver.findElement(By.xpath("//span[text()='iPhone 14 (256 GB) - (Product) RED']"));
+        Thread.sleep(2000);
 		for(; ;)
 		{
 			try 
 			{
+
 				iphoneN.click();
 				break;
 			} catch (Exception e) 
 			{
-				jse.executeScript("arguments[0].scrollIntoView(true);", iphoneN);
+				jse.executeScript("arguments[0].scrollIntoView();", iphoneN);
 			}
 		}
 		
@@ -55,7 +56,8 @@ public class RishavAmazonAsignment
 		Thread.sleep(2000);
 		colour.click();
 		Thread.sleep(3000);
-		WebElement blue = driver.findElement(By.xpath("//span[text()='Blue']"));
+		//WebElement blue = driver.findElement(By.xpath("//span[text()='Blue']"));
+		WebElement blue = driver.findElement(By.xpath("//div[@id='variation_color_name']/descendant::span[@class='selection']"));
 		Actions action = new Actions(driver);
 		List<WebElement> allColours = driver.findElements(By.xpath("//img[@class='imgSwatch']"));
 		for(WebElement c:allColours)
