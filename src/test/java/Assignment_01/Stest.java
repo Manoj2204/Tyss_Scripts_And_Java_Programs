@@ -38,7 +38,7 @@ public class Stest
         driver.findElement(By.xpath("//button[@aria-label='Saturday, 13 January 2024. Select as return date']")).click();
         
 		driver.findElement(By.xpath("//div[@class='SearchControls_directFlights__YWNjM']/following-sibling::button")).click();
-		
+		driver.quit();
 		
 		
 	}
